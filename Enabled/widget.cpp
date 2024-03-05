@@ -8,6 +8,8 @@ Widget::Widget(QWidget *parent)
     ui->setupUi(this);
     btn1 = new QPushButton("按钮", this);
     btn1->move(200, 200);
+    btn1->setEnabled(false);
+
     btn2 = new QPushButton("切换可用状态", this);
     btn2->move(200, 400);
 

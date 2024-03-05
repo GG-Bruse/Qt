@@ -13,7 +13,6 @@ Widget::~Widget()
     delete ui;
 }
 
-
 void Widget::on_pushButtonRight_clicked()
 {
     QRect rect = ui->pushButtonTarget->geometry();
@@ -37,3 +36,33 @@ void Widget::on_pushButtonDown_clicked()
     QRect rect = ui->pushButtonTarget->geometry();
     ui->pushButtonTarget->setGeometry(rect.x(), rect.y() + 5, rect.width(), rect.height());
 }
+
+
+
+//void Widget::on_pushButtonRight_clicked()
+//{
+//    QRect rect = ui->pushButtonTarget->geometry();
+//    rect.setX(rect.x() + 5);
+//    ui->pushButtonTarget->setGeometry(rect);
+//}
+
+//void Widget::on_pushButtonUp_clicked()
+//{
+//    QRect rect = ui->pushButtonTarget->geometry();
+//    rect.setY(rect.y() - 5);
+//    ui->pushButtonTarget->setGeometry(rect);
+//}
+
+//void Widget::on_pushButtonLeft_clicked()
+//{
+//    QRect rect = ui->pushButtonTarget->geometry();
+//    rect.setX(rect.x() - 5);
+//    ui->pushButtonTarget->setGeometry(rect);
+//}
+
+//void Widget::on_pushButtonDown_clicked()
+//{
+//    QRect rect = ui->pushButtonTarget->geometry();
+//    rect.setY(rect.y() + 5);
+//    ui->pushButtonTarget->setGeometry(rect);
+//}
